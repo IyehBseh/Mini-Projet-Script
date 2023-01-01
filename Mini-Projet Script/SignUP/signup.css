@@ -1,0 +1,165 @@
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 103px;
+    padding: 0;
+    position: fixed;
+    inset: 0;
+
+    margin-left: auto;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    min-height: 500px;
+    height: 580px;
+    width: 400px;
+    background-color: rgba(7, 243 ,255, 0);
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    padding: 50px 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0 226 219);
+    position: absolute;
+
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    color: white;
+    border: 2px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+.form-field input:hover {
+
+    transform: scale(1.1);
+    transition: all 150ms ease-in-out;
+
+}
+input[type=submit]{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(0, 187, 182, 0);
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 40px 40px #26817d inset, 0 0 0 0 #26817d;
+    border-color: #26817d;
+    transform: scale(0.9);
+    transition: all 150ms ease-in-out;
+}
+input[type=submit]:hover{
+    box-shadow: 0 0 10px 0 #00E2DB inset, 0 0 10px 4px #00E2DB;
+    transform: scale(1);
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+#myvid {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
